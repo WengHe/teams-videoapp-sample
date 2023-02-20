@@ -120,11 +120,14 @@ function effectParameterChanged(effectId) {
 
 video.registerForVideoEffect(effectParameterChanged);
 
-video.mediaStream.registerForVideoFrame(videoFrameHandlerV2)
+if (video.isSupported()) {
+  if (video.mediaStream.isSupported()) {
+    video.mediaStream.registerForVideoFrame(videoFrameHandlerV2)
+  } else {
+    video.registerForVideoFrame(videoFrameHandler);
+  }
 
-// video.registerForVideoFrame(videoFrameHandler, {
-//   format: "NV12",
-// });
+}
 
 // any changes to the UI should notify Teams client.
 const filterHalf = document.getElementById("filter-half");
