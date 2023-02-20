@@ -98,7 +98,7 @@ function effectParameterChanged(effectId) {
   console.log(effectId);
   if (selectedEffectId === effectId) {
     console.log('effect not changed');
-    return;
+    return Promise.resolve();
   }
   selectedEffectId = effectId;
 
@@ -107,14 +107,14 @@ function effectParameterChanged(effectId) {
     case effectIds.half:
       console.log('current effect: half');
       document.getElementById("filter-half").classList.add("selected");
-      break;
+      return Promise.resolve();
     case effectIds.gray:
       console.log('current effect: gray');
       document.getElementById("filter-gray").classList.add("selected");
-      break;
+      return Promise.resolve();
     default:
       console.log('effect cleared');
-      break;
+      return Promise.resolve();
   }
 }
 
