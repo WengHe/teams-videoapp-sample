@@ -64,6 +64,7 @@ typings/
 
 # Output of 'npm pack'
 *.tgz
+!microsoft-teams-js-*.tgz
 
 # Yarn Integrity file
 .yarn-integrity
