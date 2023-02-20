@@ -124,7 +124,9 @@ if (video.isSupported()) {
   if (video.mediaStream.isSupported()) {
     video.mediaStream.registerForVideoFrame(videoFrameHandlerV2)
   } else {
-    video.registerForVideoFrame(videoFrameHandler);
+    video.registerForVideoFrame(videoFrameHandler, {
+      format: "NV12",
+    });
   }
 
 }
