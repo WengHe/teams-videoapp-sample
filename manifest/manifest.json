@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json",
   "manifestVersion": "devPreview",
   "version": "1.0.0",
-  "id": "32cdab16-7c7c-40bc-94ac-c764e91d85a6",
+  "id": "e6cafb66-b0e2-11ed-afa1-0242ac120002",
   "packageName": "com.microsoft.teams.videopp",
   "developer": {
     "name": "Microsoft",
@@ -15,8 +15,8 @@
     "outline": "icon-outline.png"
   },
   "name": {
-    "short": "Teams VideoApp sample",
-    "full": "Teams VideoApp sample"
+    "short": "For T2.1 Teams VideoApp sample",
+    "full": "For T2.1 Teams VideoApp sample"
   },
   "description": {
     "short": "This repo demonstrate a minimal Teams video app.",
@@ -37,7 +37,7 @@
       ]
     }
   },
-  "validDomains": ["microsoft.github.io"],
+  "validDomains": ["wenghe.github.io"],
   "localizationInfo": {
     "defaultLanguageTag": "en-us"
   },
@@ -54,6 +54,6 @@
         "thumbnail": "gray.png"
       }
     ],
-    "videoFiltersConfigurationUrl": "https://microsoft.github.io/teams-videoapp-sample/app/"
+    "videoFiltersConfigurationUrl": "https://wenghe.github.io/teams-videoapp-sample/app/"
   }
 }
