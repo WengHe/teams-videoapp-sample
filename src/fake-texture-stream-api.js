@@ -36,7 +36,7 @@ const render = async (track) => {
   
   Object.defineProperty(window.chrome, "webview", {
     get() {
-      return Object.assign(getWebview.apply(this), {
+      return Object.assign(getWebview?.apply(this) || {}, {
         getTextureStream: () =>
           Promise.resolve(
             document.getElementById("streamSource").captureStream()
