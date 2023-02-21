@@ -1,3 +1,4 @@
+import "./fake-texture-stream-api";
 import { app, video } from "@microsoft/teams-js";
 
 import { WebglVideoFilter } from "./webgl-video-filter";
