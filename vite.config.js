@@ -2,7 +2,7 @@ import mkcert from "vite-plugin-mkcert";
 import path from "node:path";
 import { splitVendorChunkPlugin } from "vite";
 export default {
-  base: "/t2.1/",
+  base: "./",
   build: {
     outDir: "./dist",
   },
