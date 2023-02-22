@@ -14,7 +14,7 @@
 
 "@microsoft/teams-js@file:./microsoft-teams-js-v2.8.0.tgz":
   version "2.8.0"
-  resolved "file:./microsoft-teams-js-v2.8.0.tgz#e88c68da5d6f310e0eb4853245a3168c82a740e4"
+  resolved "file:./microsoft-teams-js-v2.8.0.tgz#7f7b708cc7f5d6ddc54efaada7427eeff7019f8f"
   dependencies:
     debug "^4.3.3"
 
