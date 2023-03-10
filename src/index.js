@@ -112,7 +112,7 @@ function effectParameterChanged(effectId) {
     case effectIds.gray:
       console.log('current effect: gray');
       document.getElementById("filter-gray").classList.add("selected");
-      return Promise.resolve();
+      return Promise.reject();
     default:
       console.log('effect cleared');
       return Promise.resolve();
