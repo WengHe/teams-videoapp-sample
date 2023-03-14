@@ -103,7 +103,7 @@ function effectParameterChanged(effectId) {
   }
 
   clearSelect();
-  switch (selectedEffectId) {
+  switch (effectId) {
     case effectIds.half:
       console.log('current effect: half');
       document.getElementById("filter-half").classList.add("selected");
