@@ -126,12 +126,15 @@ video.registerForVideoEffect(effectParameterChanged);
 if (video.isSupported()) {
   if (video.mediaStream.isSupported()) {
     video.mediaStream.registerForVideoFrame(videoFrameHandlerV2)
-  } else {
-    video.registerForVideoFrame(videoFrameHandler, {
+  } else if (video.sharedFrame.isSupported()) {
+    video.sharedFrame.registerForVideoFrame(videoFrameHandler, {
       format: "NV12",
     });
+  } else {
+    console.error("both capabilities are not supported");
   }
-
+} else {
+  console.error("video capability is not supported");
 }
 
 // any changes to the UI should notify Teams client.
