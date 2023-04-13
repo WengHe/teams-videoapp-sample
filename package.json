@@ -18,7 +18,7 @@
     "vite": "^3.0.0"
   },
   "dependencies": {
-    "@microsoft/teams-js": "file:./microsoft-teams-js-v2.9.1.tgz",
+    "@microsoft/teams-js": "https://github.com/WengHe/microsoft-teams-library-js/releases/download/2.9.0-private-build/microsoft-teams-js-2.9.0-private-build.tgz",
     "vite-plugin-mkcert": "^1.9.0"
   }
 }
