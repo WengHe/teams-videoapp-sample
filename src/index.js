@@ -61,7 +61,10 @@ async function  videoFrameHandlerV2 (receivedVideoFrame) {
   count++;
   const originalFrame = receivedVideoFrame.videoFrame;
   const buffer = new ArrayBuffer(originalFrame.allocationSize());
+  const start = performance.now();
   await originalFrame.copyTo(buffer);
+  const end = performance.now();
+  console.log(`copyTo costs ${end - start} ms - ${originalFrame.codedWidth} x ${originalFrame.codedHeight}`);
   const videoFrame = {
     width: originalFrame.codedWidth,
     height: originalFrame.codedHeight,
